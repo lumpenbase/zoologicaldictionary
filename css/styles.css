@@ -1,0 +1,372 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
+  font-size: 10;
+  line-height: 0;
+  color: 333;
+}
+
+a{
+  color: rgba(255,255,255,0.5);
+}
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+
+.header{
+ background-color: black;
+  margin: 0;
+  height: 42px;
+  width: auto;
+}
+
+
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+
+.site-nav_link {
+  font: 400 15px/1.5 Arial, sans-serif;
+  color: #b2b2b2;
+  font-size: 7pt;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  margin-left: 11px;
+  margin-right: 11px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  display: inline-block;
+  position: relative;
+  }  
+
+
+.site-nav_link:after{
+  background-color: #00CED1;
+  content: "";
+  display: block;
+  width: 99%;
+  height: 2px;
+  display: none;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+  
+.site-nav_link:hover::after {
+  display: block;
+}
+  
+.site-nav_link--active{
+  color: #00979d;
+}
+
+
+.rama-site{
+  width: 94%;
+  height: auto;
+  border-left: 50px;
+  border-right: 50px;
+  margin: 0 auto;
+  max-width: 1440px;
+  border-left: 1px solid #cbcccb;
+  border-right: 1px solid #cbcccb;
+}
+    
+.title_block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-video{
+  width: 100%;
+  height: 480px;
+
+  position: relative;
+  display: flex;
+  object-fit: cover;
+}
+
+
+.introsuper_title{
+  color: #addde0;
+  font: 400 15px/1.5 Arial,sans-serif;
+  font-family: 'Oswald',sans-serif;
+
+  font-size: 38px;
+  letter-spacing: .18em;
+
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  }
+  
+  
+  /* .intro_title{
+  color: #fff;
+  font: 400 15px/1.5 Arial,sans-serif;
+  font-family: 'Karla',sans-serif;
+  font-size: 3.25em;
+  font-weight: 700;
+
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  } */
+  
+.flex-container{
+  font: 400 15px/1.5 Arial,sans-serif;
+  color: #404040;
+  font-family: 'Karla',sans-serif;
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+}
+
+
+.home_content{
+  color: #404040;
+  padding: 3em 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: left;
+
+  position: relative;
+}
+
+
+.main-cont{
+  color: #00979d;
+  font: Arial,sans-serif;
+  font-family: 'Oswald',sans-serif;
+  font-size: 6em;
+  font-weight: 300;
+  letter-spacing: .02em;
+  line-height: 1.2em;
+
+  text-align: left;
+}
+
+
+.main-reg-users{
+  font: Arial,sans-serif;
+  font-family: 'Oswald',sans-serif;
+  color: #addde0;
+  margin: 0;
+  font-size: 1.5em;
+  letter-spacing: .18em;
+
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  display: inline;
+}
+
+
+.main-reg-user{
+  color: #404040;
+  font-family: 'Karla',sans-serif;
+  font: 400 15px/1.5 Arial,sans-serif;
+  font-size: 1em;
+  margin: 1.5em 0;
+  max-width: 50%;
+
+  text-align: center;
+  display: inline;
+
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+}
+
+
+.worker_img{
+  height: 350px;
+  margin: 5em 0;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+
+.def-zoo{
+  color: #5c5c5c;
+  font-size: 1em;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-top:20px;
+}
+
+
+.con-zoo{
+  color: #404040;
+  font: 400 15px/1.5 Arial,sans-serif;
+  font-family: 'Karla',sans-serif;
+  text-align: center;
+  flex-grow: 3;
+  flex-shrink: 0;
+  flex-basis: 0;
+  font-weight: 700;
+  font-size: 1em;
+  -webkit-box-flex: 3;
+  margin: 0 5vw 2vh 10vw;
+  min-width: 50%;
+}
+
+
+.home-box{
+  font: 400 15px/1.5 Arial,sans-serif;
+  background-color: #eef2f5;
+  color: #404040;
+  font-family: 'Karla',sans-serif;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 5em;
+  text-align: left;
+}
+
+
+.us_worker{
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: #5c5c5c;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  display: inline;
+  margin: 0;
+}
+
+
+.home_content-users{
+  color: #404040;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.layout_footer{
+  font: 400 15px/1.5 Arial,sans-serif;
+  background: #272727;
+}
+
+
+.footer_upper{
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em 5vw 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+
+.footer_author{
+  font: 400 15px/1.5 Arial,sans-serif;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  flex-basis: 30%;
+  margin: 0 2em 1em 0;
+}
+
+
+.app-footer_nav-lists{
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+}
+
+
+.app-footer_nav-list a{
+  font: 400 15px/1.5 Arial,sans-serif;
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: block;
+}
+
+
+.footer_sole{
+  background-color: rgba(0,0,0,0.2);
+  padding: 12px 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.link_sole{
+  font: 400 15px/1.5 Arial,sans-serif;
+  color: rgba(255,255,255,0.5);
+  font-size: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* https://www.nado5.ru/e-book/chto-izuchaet-zoologiya */
+/* https://naturalhistory.si.edu/research/vertebrate-zoology */
